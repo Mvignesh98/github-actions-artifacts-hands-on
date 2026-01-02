@@ -26,10 +26,11 @@ jobs:
     steps:
     - name: download artificats
       uses: actions/download-artifact@v5
-      with: download artifact
+      with: 
         name: hello-artifact
         path: ./artifacts
         
     - name: read the content of the file
       run: cat ./artifacts/hello.txt
+
 
